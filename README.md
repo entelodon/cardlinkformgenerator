@@ -13,7 +13,7 @@ $form = [
     'orderDesc' => 'ORDER_DESC',
     'orderAmount' => '100',
     'currency' => 'EUR',
-    'billCountry' => 'ATHENS',
+    'billCountry' => 'GR',
     'billState' => 'ATHENS',
     'billZip' => '000000',
     'billCity' => 'ATHENS',
@@ -22,3 +22,6 @@ $form = [
 
 var_dump($cardlinkFormGenerator->generate($form));
 ```
+
+Official Documentation:
+https://www.eurobank.gr/-/media/eurobank/business/ilektronikes-upiresies/e-commerce/cardlink-payment-gateway-redirect-model-3ds.pdf
