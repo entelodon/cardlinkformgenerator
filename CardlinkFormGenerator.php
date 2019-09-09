@@ -93,7 +93,7 @@ class CardlinkFormGenerator
      * @return array
      * @throws Exception
      */
-    public function generate(array $userForm)
+    public function generate(array $userForm) : array
     {
         $result = [];
         foreach (self::$scheme as $key => $isRequired) {
@@ -125,7 +125,7 @@ class CardlinkFormGenerator
      * @param array $data
      * @return string
      */
-    private function calculateDigest(array $data)
+    private function calculateDigest(array $data) : string
     {
         $dataString = implode('', $data);
         $dataString .= $this->secret;
