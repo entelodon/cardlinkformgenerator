@@ -129,6 +129,7 @@ class CardlinkFormGenerator
     {
         $dataString = implode('', $data);
         $dataString .= $this->secret;
+        $dataString =!mb_detect_encoding($dataString,'utf-8',true)?utf8_encode($dataString):$dataString;
         return base64_encode(hash("sha256", utf8_encode($dataString), true));
     }
 }
